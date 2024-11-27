@@ -1,0 +1,18 @@
+ 
+============================================================
+=====     Queued job information at submit time        =====
+============================================================
+  The submitted file is: myscript.sh
+  The time limit is 01:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsd0158/CS581/HW/HW5
+  The memory limit is: 1gb
+  The job will start running after: 202411261255.27
+  Job Name: test1
+  Queue: -q classgpu
+  Constraints: 
+  Command typed:
+/scripts/run_gpu myscript.sh     
+  Queue submit command:
+qsub -q classgpu -j oe -N test1 -a 202411261255.27 -r n -M ahahn1@crimson.ua.edu -l walltime=01:00:00 -l select=1:ngpus=1:ncpus=1:mpiprocs=1:mem=1000mb 
+  Job number: 214953
+ 
